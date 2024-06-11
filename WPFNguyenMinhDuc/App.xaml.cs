@@ -43,6 +43,7 @@ namespace WPFNguyenMinhDuc
             // Register view models
             services.AddTransient<AdminViewModel>();
             services.AddTransient<CustomerViewModel>();
+            services.AddTransient<GeneralCustomerVM>();
             // Add other view models...
 
             // Register views

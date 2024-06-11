@@ -54,5 +54,12 @@ namespace Service
             .OrderByDescending(b => b.BookingDate)
             .ToList();
         }
+
+        public List<BookingReservation> GetBookingHistory(int customerId)
+        {
+            return GetAllBookingsDesc()
+                .Where(b => b.CustomerId == customerId)
+                .ToList();
+        }
     }
 }

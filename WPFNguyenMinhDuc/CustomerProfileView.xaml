@@ -19,7 +19,7 @@
             <PasswordBox Password="{Binding CurrentCustomer.Password}" Name="PasswordBox" />
             <Label Content="Birthday" />
             <DatePicker SelectedDate="{Binding CurrentCustomer.CustomerBirthday}" Name="BirthDayPicker" />
-            <Button Content="Update" Command="{Binding UpdateCommand}" />
+            <Button Content="Update" Command="{Binding UpdateCommand}" Click="Button_Click" />
         </StackPanel>
     </Grid>
 </Window>

@@ -16,5 +16,6 @@ namespace Service
         void Update(BookingReservation bookingReservation);
         void Delete(int id);
         List<BookingReservation> GetBookingsByPeriod(DateOnly startDate, DateOnly endDate);
+        List<BookingReservation> GetBookingHistory(int customerId);
     }
 }
