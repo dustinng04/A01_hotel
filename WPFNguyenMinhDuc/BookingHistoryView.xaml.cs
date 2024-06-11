@@ -16,17 +16,16 @@ using System.Windows.Shapes;
 namespace WPFNguyenMinhDuc
 {
     /// <summary>
-    /// Interaction logic for CustomerView.xaml
+    /// Interaction logic for BookingHistoryView.xaml
     /// </summary>
-    public partial class CustomerView : Window
+    public partial class BookingHistoryView : Window
     {
+        private readonly int _customerId;
 
-        private readonly int id;
-
-        public CustomerView(int customerId)
+        public BookingHistoryView(int customerId)
         {
             InitializeComponent();
-            id = customerId;
+            _customerId = customerId;
         }
     }
 }

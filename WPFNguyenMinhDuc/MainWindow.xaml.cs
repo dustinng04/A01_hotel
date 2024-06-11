@@ -44,7 +44,8 @@ namespace WPFNguyenMinhDuc
                 var customer = _customerService.AuthenticateCustomer(email, password);
                 if (customer != null)
                 {
-                    var customerView = new CustomerView(customer);
+                    int customerId = customer.CustomerId;
+                    var customerView = new CustomerView(customerId);
                     customerView.Show();
                     this.Close();
                 }

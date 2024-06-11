@@ -54,5 +54,6 @@ namespace WPFNguyenMinhDuc
                 MessageBox.Show("Please select both start and end dates.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
+
     }
 }

@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFNguyenMinhDuc"
         mc:Ignorable="d"
-        Title="CustomerView" Height="450" Width="800">
+        Title="CustomerView" Height="350" Width="525">
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Manage Profile" Command="{Binding ManageProfileCommand}" Width="200" Margin="10" Padding="10" />
+            <Button Content="View Booking History" Command="{Binding ViewBookingHistoryCommand}" Width="200" Margin="10" Padding="10" />
+        </StackPanel>
     </Grid>
 </Window>
