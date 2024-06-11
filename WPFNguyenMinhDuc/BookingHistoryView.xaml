@@ -8,7 +8,7 @@
         Loaded="Window_Loaded"
         Title="BookingHistoryView" Height="450" Width="800">
     <Grid>
-        <DataGrid ItemsSource="{Binding BookingHistory}" x:Name="BookingHistoryGrid">
+        <DataGrid x:Name="BookingHistoryGrid">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Booking ID" Binding="{Binding BookingReservationId}" />
                 <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate}" />

@@ -42,7 +42,7 @@ namespace WPFNguyenMinhDuc
             // Retrieve booking history for the customer
             var bookingList = _bookingReservationService.GetBookingHistory(_customerId);
 
-            
+            BookingHistoryGrid.ItemsSource = bookingList;
         }
     }
 }

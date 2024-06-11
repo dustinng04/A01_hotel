@@ -10,16 +10,16 @@
     <Grid>
         <StackPanel>
             <Label Content="Full Name" />
-            <TextBox Text="{Binding CurrentCustomer.CustomerFullName}" Name="FullNameTxt" />
+            <TextBox Name="FullNameTxt" />
             <Label Content="Telephone" />
-            <TextBox Text="{Binding CurrentCustomer.Telephone}" Name="TelephoneTxt"/>
+            <TextBox Name="TelephoneTxt"/>
             <Label Content="Email" />
-            <TextBox Text="{Binding CurrentCustomer.EmailAddress}" Name="EmailTxt"/>
+            <TextBox Name="EmailTxt"/>
             <Label Content="Password" />
-            <PasswordBox Password="{Binding CurrentCustomer.Password}" Name="PasswordBox" />
+            <PasswordBox Name="PasswordBox" />
             <Label Content="Birthday" />
             <DatePicker SelectedDate="{Binding CurrentCustomer.CustomerBirthday}" Name="BirthDayPicker" />
-            <Button Content="Update" Command="{Binding UpdateCommand}" Click="Button_Click" />
+            <Button Content="Update" Click="Button_Click" />
         </StackPanel>
     </Grid>
 </Window>
