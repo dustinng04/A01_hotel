@@ -86,7 +86,8 @@ namespace WPFNguyenMinhDuc
                 _selectedRoom.RoomNumber = RoomNumberTextBox.Text;
                 _selectedRoom.RoomDetailDescription = RoomDetailDescriptionTextBox.Text;
                 _selectedRoom.RoomMaxCapacity = int.TryParse(RoomMaxCapacityTextBox.Text, out int maxCapacity) ? maxCapacity : (int?)null;
-                _selectedRoom.RoomStatus = (byte?)((ComboBoxItem)RoomStatusComboBox.SelectedItem)?.Tag;
+                _selectedRoom.RoomStatus = byte.TryParse(((ComboBoxItem)RoomStatusComboBox.SelectedItem)?.Tag.ToString(), out byte result) ? (byte?)result : null;
+
                 _selectedRoom.RoomPricePerDay = decimal.TryParse(RoomPricePerDayTextBox.Text, out decimal pricePerDay) ? pricePerDay : (decimal?)null;
                 _selectedRoom.RoomTypeId = (int)RoomTypeComboBox.SelectedValue;
                 _roomService.Update(_selectedRoom);
